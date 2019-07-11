@@ -121,7 +121,8 @@ VIVE Wave™ provides easy-use and practical SDK APIs for VR contents developmen
   * Standalone HMD
 
 7. Open Interface for Device Plugin
- The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
+
+The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
 
 8. Qualcomm Snapdragon VR Embedded
 
