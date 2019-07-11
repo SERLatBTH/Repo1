@@ -121,10 +121,10 @@ The vendors of VR accessory can easily develop their device service(driver) and 
 VIVE Wave™ is fully integrated with Qualcomm SVR to leverage the hardware optimization of powerful Snapdragon SoC for mobile VR.
 
 #### test
-1. some list mainstream
+* some list mainstream
   * some sub list mainstream
   * second
-2. Ok
+* Ok
 
 #### Different type of VIVE Wave SDK
 
