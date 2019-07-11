@@ -109,7 +109,7 @@ VIVE Wave™ provides easy-use and practical SDK APIs for VR contents developmen
   * System 2D Overlay
   * Unity and Unreal Plugin support
   * Safety virtual wall
-  
+
 6. Various HMD Types Supported
   * Smartphone slot-in HMD
   * Smartphone tethered HMD
@@ -119,6 +119,12 @@ VIVE Wave™ provides easy-use and practical SDK APIs for VR contents developmen
 The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
 8. Qualcomm Snapdragon VR Embedded
 VIVE Wave™ is fully integrated with Qualcomm SVR to leverage the hardware optimization of powerful Snapdragon SoC for mobile VR.
+
+#### test
+1. some list mainstream
+  * some sub list mainstream
+  * second
+2. Ok
 
 #### Different type of VIVE Wave SDK
 
