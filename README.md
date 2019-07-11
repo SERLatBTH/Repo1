@@ -92,16 +92,12 @@ The documentation you can find [here](https://hub.vive.com/en-US/profile/documen
 Key Features of VIVE Wave™
 1. Cross Platform
 VIVE Wave™ runtime is a set of installable apk files supported on the platform with Android 7.1 or above. Users just need to install VIVE Wave™ apks on the VR devices and then can start to enjoy the VR world.
-
 2. Less Customization
 VIVE Wave™ runtime exists on Android application layer and has no any proprietary customization in Android framework and BSP.
-
 3. High Performance Mode
 VR devices just need to configure the specific CPU/GPU clock rate for Android VR mode and then VR devices just can get the high performance mode for VR rendering.
-
 4. Standardized SDK interface
 VIVE Wave™ provides easy-use and practical SDK APIs for VR contents development. Developers just need to spend minimal effort to be able to easily port contents to VIVE Wave™.
-
 5. Versatile VR Features Optimized for Mobile VR
   * <20ms motion to photon latency
   * 3/6 DoF head and controller tracking
@@ -113,19 +109,13 @@ VIVE Wave™ provides easy-use and practical SDK APIs for VR contents developmen
   * System 2D Overlay
   * Unity and Unreal Plugin support
   * Safety virtual wall
-
 6. Various HMD Types Supported
-
   * Smartphone slot-in HMD
   * Smartphone tethered HMD
   * Standalone HMD
-
 7. Open Interface for Device Plugin
-
 The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
-
 8. Qualcomm Snapdragon VR Embedded
-
 VIVE Wave™ is fully integrated with Qualcomm SVR to leverage the hardware optimization of powerful Snapdragon SoC for mobile VR.
 
 #### Different type of VIVE Wave SDK
