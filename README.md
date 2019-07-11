@@ -135,7 +135,6 @@ VIVE Wave™ provides the native SDK for the native VR app development or third-
 VIVE Wave™ provides the Unity SDK which fully integrated with VIVE Wave™ native runtime for Unity developers. Unity developers don’t need to take care the detailed VR affairs and can concentrate on VR content development.
 
 3. Wave Unreal SDK
-
 VIVE Wave™ provides the Unreal SDK which fully integrated with Wave native runtime for Unreal development. Unreal developers don’t need to take care the detailed VR affairs and can concentrate on VR content development.
 
 4. Wave PluginKit SDK
@@ -148,7 +147,6 @@ The PluginKit SDK is provided to help developers design a VR DeviceService. It e
  * VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
 
 5. Wave OEM SDK
-
 The VROEMservice SDK is provided to help developers design a VROEMService. It encapsulates the communication between a VIVE Wave™ Server and a VROEMService. It also provides mechanisms for defining data transmission and making VIVE Wave™ Server to act.
  * The VROEMservice defines several interfaces to make it easier to customize your own features.
  * A VROEMService can get information from VIVE Wave™ Server.
