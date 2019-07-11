@@ -28,6 +28,17 @@ Vive Port is a VR device that can be connect to the pc and acts like a controlle
 Lab - shelf lef1
 
 ## In The box
+The box contains all the equipments which related to Vive Port VR. It has the box based on the steps. Step 1 is one big paper which introduces how to download and set up. Step 2-5 all is linked to different boxes. Below is the content list of the Vive-pro box.
+1. Headset with headset cable
+2. Controller (with lanyard)*2
+3. Power adaper*2
+4. Micro-USB cable*2
+5. Earphone hole cap*2
+6. Link box mounting pad
+7. Cleaning cloth
+8. Screws*4
+9. Documentations (SteamVR tracking 2.0 Base Stations mounting guide with different languages*2)
+![alt text](
 
 ## How To Make It Works
 
