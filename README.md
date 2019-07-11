@@ -103,20 +103,20 @@ VR devices just need to configure the specific CPU/GPU clock rate for Android VR
 VIVE Wave™ provides easy-use and practical SDK APIs for VR contents development. Developers just need to spend minimal effort to be able to easily port contents to VIVE Wave™.
 
 5. Versatile VR Features Optimized for Mobile VR
-* <20ms motion to photon latency
-* 3/6 DoF head and controller tracking
-* Stereo rendering with Asynchronous TimeWarp
-* Single buffer rendering with V-Sync scheduling
-* Columns or Rows strip rendering
-* Lens distortion correction and chromatic aberration correction
-* Tracking prediction
-* System 2D Overlay
-* Unity and Unreal Plugin support
-* Safety virtual wall
+ * <20ms motion to photon latency
+ * 3/6 DoF head and controller tracking
+ * Stereo rendering with Asynchronous TimeWarp
+ * Single buffer rendering with V-Sync scheduling
+ * Columns or Rows strip rendering
+ * Lens distortion correction and chromatic aberration correction
+ * Tracking prediction
+ * System 2D Overlay
+ * Unity and Unreal Plugin support
+ * Safety virtual wall
 6. Various HMD Types Supported
-* Smartphone slot-in HMD
-* Smartphone tethered HMD
-* Standalone HMD
+ * Smartphone slot-in HMD
+ * Smartphone tethered HMD
+ * Standalone HMD
 
 7. Open Interface for Device Plugin
 The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
@@ -127,26 +127,31 @@ VIVE Wave™ is fully integrated with Qualcomm SVR to leverage the hardware opti
 #### Different type of VIVE Wave SDK
 
 1. Wave Native SDK
+
 VIVE Wave™ provides the native SDK for the native VR app development or third-party engine integration. The key features include VR device tracking and input, and VR stereo rendering.
 
 2. Wave Unity SDK
+
 VIVE Wave™ provides the Unity SDK which fully integrated with VIVE Wave™ native runtime for Unity developers. Unity developers don’t need to take care the detailed VR affairs and can concentrate on VR content development.
 
 3. Wave Unreal SDK
+
 VIVE Wave™ provides the Unreal SDK which fully integrated with Wave native runtime for Unreal development. Unreal developers don’t need to take care the detailed VR affairs and can concentrate on VR content development.
 
 4. Wave PluginKit SDK
+
 The PluginKit SDK is provided to help developers design a VR DeviceService. It encapsulates the communication between a VIVE Wave™ Server and a VR DeviceService. It also provides mechanisms for defining data transmission.
-* The PluginKit has defined several interfaces to make it easier to develop drivers.
-* A VR DeviceService can currently send three types of data (pose, button, and analog) to VR apps.
-* When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
-* You can decide how to use the tracker. For example, you can use the Android™ sensor manager (sensor.TYPE_GAME_ROTATION_VECTOR) as tracking data, and send the data to the VR App so the tracker will move with the smartphone. Or you can use a different path for the tracker. For example, the path could be a circle or a line.
-* VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
+ * The PluginKit has defined several interfaces to make it easier to develop drivers.
+ * A VR DeviceService can currently send three types of data (pose, button, and analog) to VR apps.
+ * When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
+ * You can decide how to use the tracker. For example, you can use the Android™ sensor manager (sensor.TYPE_GAME_ROTATION_VECTOR) as tracking data, and send the data to the VR App so the tracker will move with the smartphone. Or you can use a different path for the tracker. For example, the path could be a circle or a line.
+ * VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
 
 5. Wave OEM SDK
+
 The VROEMservice SDK is provided to help developers design a VROEMService. It encapsulates the communication between a VIVE Wave™ Server and a VROEMService. It also provides mechanisms for defining data transmission and making VIVE Wave™ Server to act.
-* The VROEMservice defines several interfaces to make it easier to customize your own features.
-* A VROEMService can get information from VIVE Wave™ Server.
-* When developing a VROEMservice, you should implement the interface of IVROEMService and the interface of IVROEMService_api1.
-* You can design your own behaviors according the information that is transmitted from VIVE Wave™ Server.
-    
+ * The VROEMservice defines several interfaces to make it easier to customize your own features.
+ * A VROEMService can get information from VIVE Wave™ Server.
+ * When developing a VROEMservice, you should implement the interface of IVROEMService and the interface of IVROEMService_api1.
+ * You can design your own behaviors according the information that is transmitted from VIVE Wave™ Server.
+
