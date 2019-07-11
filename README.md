@@ -103,7 +103,6 @@ VR devices just need to configure the specific CPU/GPU clock rate for Android VR
 VIVE Wave™ provides easy-use and practical SDK APIs for VR contents development. Developers just need to spend minimal effort to be able to easily port contents to VIVE Wave™.
 
 5. Versatile VR Features Optimized for Mobile VR
-
   * <20ms motion to photon latency
   * 3/6 DoF head and controller tracking
   * Stereo rendering with Asynchronous TimeWarp
@@ -151,7 +150,7 @@ The PluginKit SDK is provided to help developers design a VR DeviceService. It e
  * When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
  * You can decide how to use the tracker. For example, you can use the Android™ sensor manager (sensor.TYPE_GAME_ROTATION_VECTOR) as tracking data, and send the data to the VR App so the tracker will move with the smartphone. Or you can use a different path for the tracker. For example, the path could be a circle or a line.
  * VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
- 
+
 5. Wave OEM SDK
 
 The VROEMservice SDK is provided to help developers design a VROEMService. It encapsulates the communication between a VIVE Wave™ Server and a VROEMService. It also provides mechanisms for defining data transmission and making VIVE Wave™ Server to act.
@@ -165,26 +164,26 @@ The VROEMservice SDK is provided to help developers design a VROEMService. It en
 ### VIVE Sense SDK
 This SDK is used to build applications for pc, it consists of multiple sub SDK that can be downloaded and used.
 
-+ SRanipal SDK
+#### SRanipal SDK
   The SRanipal SDK allows developers to track and integrate users’ eye and lip movements, empowering developers to read intention and model facial expression. The SRanipal SDK includes the required runtime which runs in the notification tray to show the current eye tracking status for VIVE Pro Eye. Plugins for Unreal and Unity are included in the SRanipal SDK along with sample code for native C development. You can find more details [here](https://community.viveport.com/t5/Developer-Blog/Attention-Developers-VIVE-Pro-Eye-Has-Arrived/ba-p/31090?_ga=2.21629240.248110000.1562852303-399269017.1562852303)
 
   SRanipal SDK can be download from [here](https://developer.vive.com/resources/knowledgebase/vive-sranipal-sdk/)
 
-+ VIVE Hand Tracking SDK
+#### VIVE Hand Tracking SDK
   A cross platform tool to track hand position and recognize gestures using the front camera(s) of the VIVE, VIVE Pro and the VIVE Focus (Wave Platform). Finger tracking (21 points) is available for the Vive and Vive Pro.
 
-  VIVE hand tracking sdk can be downloaded from [here](https://developer.vive.com/resources/knowledgebase/vive-hand-tracking/)
+  VIVE hand tracking SDK can be downloaded from [here](https://developer.vive.com/resources/knowledgebase/vive-hand-tracking/)
 
   Detailed documentations and code samples can be found [here](https://developer.viveport.com/documents/sdk/en/vivehandtracking_index.html?_ga=2.8634422.248110000.1562852303-399269017.1562852303)
 
-+ [SRWorks SDK](https://developer.vive.com/resources/knowledgebase/intro-vive-srworks-sdk/)
+#### [SRWorks SDK](https://developer.vive.com/resources/knowledgebase/intro-vive-srworks-sdk/)
   SRWorks SDK With the launch of VIVE Pro, developers will now have access to the stereo front facing cameras to create new experiences that can mix the see-through stereo camera view and their virtual worlds. This will enable developers to perform 3D perception and depth sensing with the stereo RGB sensors, opening new worlds for more creative, interactive experiences.
 
   In addition to the updated OpenVR camera APIs that can now handle more than the mono camera of the original VIVE, the VIVE Software team is also providing developers with early access to the SRWorks SDK.
 
   SRWorks SDK can be downloaded from [here](https://developer.vive.com/resources/knowledgebase/intro-vive-srworks-sdk/)
 
-+ [VIVE 3DSP SDK](https://developer.vive.com/resources/knowledgebase/about-vive-pro-sdks/)
+#### [VIVE 3DSP SDK](https://developer.vive.com/resources/knowledgebase/about-vive-pro-sdks/)
   The VIVE 3D Sound Perception SDK provides a Unity compatible, audio spatialization plugin with the following features:
 
   * Higher Order Ambisonics
