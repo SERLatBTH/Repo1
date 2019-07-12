@@ -290,6 +290,7 @@ The VIVEPORT SDK consists of the components below:
  It has 9 different type of APIs. They are [Top Level API](https://developer.viveport.com/documents/sdk/en/api_top.html), [DRM API](https://developer.viveport.com/documents/sdk/en/api_drm.html), [Session Token API](https://developer.viveport.com/documents/sdk/en/api_token.html), [User Profile API](https://developer.viveport.com/documents/sdk/en/api_userprofile.html), [In-App Purchase (IAP) API](https://developer.viveport.com/documents/sdk/en/api_iap.html), [Deeplink API](https://developer.viveport.com/documents/sdk/en/api_deeplink.html), [Downloadable Content (DLC) API](https://developer.viveport.com/documents/sdk/en/api_dlc.html), [Stats & Achievements API](https://developer.viveport.com/documents/sdk/en/api_stats.html) and [Leaderboards API](https://developer.viveport.com/documents/sdk/en/api_leaderboard.html). The details of how to use them and the examples can be found by click the name.
 
 * Integration 
+
  Here is the guideline of how to integrate your content with the VIVEPORT platform.
   1. Integration with [Unity](https://developer.viveport.com/documents/sdk/en/unity.html).
   2. Integration with [Unreal Engine](https://developer.viveport.com/documents/sdk/en/unrealengine.html).
@@ -308,13 +309,7 @@ The VIVEPORT SDK consists of the components below:
 
   3. Unzip the package and find the ViveportSwitch.exe tool.
 
-  4.Open the ViveportSwitch.exe tool and select VIVEPORT Arcade, then click the Switch button.
-
-   The modes for the tool you can switch to:
-
-   ◦ VIVEPORT Desktop: General SDK interface
-
-   ◦ VIVEPORT Arcade: Arcade mode SDK interface
+  4. Open the ViveportSwitch.exe tool and select VIVEPORT Arcade, then click the Switch button.
 
   5. After switching to VIVEPORT mode, the VIVEPORT service will be restarted. You must re-launch VIVEPORT on your desktop before continuing development.
 
@@ -340,13 +335,13 @@ The VIVEPORT SDK consists of the components below:
 
  * Introduction
 
-  Vive Hand Tracking SDK is aimed to provide:
+   Vive Hand Tracking SDK is aimed to provide:
 
-   * First-person view hand recognition in VR/AR/Phones
-   * Provide accurate, low-latency, deep learning-based solution.
-   * Support different hardware & operation systems.
-   * Use existing camera modules, no extra hardware needed.
-   * Recognises static gestures, instead of gesture sequences.
+    * First-person view hand recognition in VR/AR/Phones
+    * Provide accurate, low-latency, deep learning-based solution.
+    * Support different hardware & operation systems.
+    * Use existing camera modules, no extra hardware needed.
+    * Recognises static gestures, instead of gesture sequences.
 
  * Supported Operation Systems & Hardware
 
@@ -362,12 +357,12 @@ The VIVEPORT SDK consists of the components below:
 
  * Supported Features
 
- Vive Hand Tracking SDK supports:
+   Vive Hand Tracking SDK supports:
 
-   * Left/Right hand detection
-   * Pre-defined gesture classification
-   * Different modes for hand position result (restricted by OS/hardware capability)
- For detailed feature for each OS/hardware, please see [Available Features](https://developer.viveport.com/documents/sdk/en/overview/feature.html).
+    * Left/Right hand detection
+    * Pre-defined gesture classification
+    * Different modes for hand position result (restricted by OS/hardware capability)
+   For detailed feature for each OS/hardware, please see [Available Features](https://developer.viveport.com/documents/sdk/en/overview/feature.html).
 
  * Available Plugins
 
