@@ -149,19 +149,21 @@ Key Features of VIVE Wave™
 #### Wave PluginKit SDK
 
    The PluginKit SDK is provided to help developers design a VR DeviceService. It encapsulates the communication between a VIVE Wave™ Server and a VR DeviceService. It also provides mechanisms for defining data transmission.
-      * The PluginKit has defined several interfaces to make it easier to develop drivers.
-      * A VR DeviceService can currently send three types of data (pose, button, and analog) to VR apps.
-      * When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
-      * You can decide how to use the tracker. For example, you can use the Android™ sensor manager (sensor.TYPE_GAME_ROTATION_VECTOR) as tracking data, and send the data to the VR App so the tracker will move with the smartphone. Or you can use a different path for the tracker. For example, the path could be a circle or a line.
-      * VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
+   
+   * The PluginKit has defined several interfaces to make it easier to develop drivers.
+   * A VR DeviceService can currently send three types of data (pose, button, and analog) to VR apps.
+   * When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
+   * You can decide how to use the tracker. For example, you can use the Android™ sensor manager (sensor.TYPE_GAME_ROTATION_VECTOR) as tracking data, and send the data to the VR App so the tracker will move with the smartphone. Or you can use a different path for the tracker. For example, the path could be a circle or a line.
+   * VRCameraInterface provides an interface to let developer customized their own camera device. Currently, we only support customized camera features on HMD.
 
 #### Wave OEM SDK
 
    The VROEMservice SDK is provided to help developers design a VROEMService. It encapsulates the communication between a VIVE Wave™ Server and a VROEMService. It also provides mechanisms for defining data transmission and making VIVE Wave™ Server to act.
-      * The VROEMservice defines several interfaces to make it easier to customize your own features.
-      * A VROEMService can get information from VIVE Wave™ Server.
-      * When developing a VROEMservice, you should implement the interface of IVROEMService and the interface of IVROEMService_api1.
-      * You can design your own behaviors according the information that is transmitted from VIVE Wave™ Server.
+   
+   * The VROEMservice defines several interfaces to make it easier to customize your own features.
+   * A VROEMService can get information from VIVE Wave™ Server.
+   * When developing a VROEMservice, you should implement the interface of IVROEMService and the interface of IVROEMService_api1.
+   * You can design your own behaviors according the information that is transmitted from VIVE Wave™ Server.
 
 
 ### VIVE Sense SDK
@@ -235,74 +237,78 @@ The VIVEPORT SDK consists of the components below:
 ##### Introduction
 
 * How Does the Client-Side SDK Work
- 1. Users need to log in VIVEPORT Desktop by using their HTC Account (the account has owned this content) before launching the content.
- 2. With the VIVEPORT SDK, the launched content can send a request to the VIVEPORT cloud services via VIVEPORT Desktop or Viveport App to check the user’s profile and licenses.
- 3. The VIVEPORT cloud services return the user’s profile and licenses to client-side SDK for processing or verifying.
- 4. The launched content may interact with the user through the user’s profile in VIVEPORT, or just check whether the user owns the content.
+
+  1. Users need to log in VIVEPORT Desktop by using their HTC Account (the account has owned this content) before launching the content.
+  2. With the VIVEPORT SDK, the launched content can send a request to the VIVEPORT cloud services via VIVEPORT Desktop or Viveport App to check the user’s profile and licenses.
+  3. The VIVEPORT cloud services return the user’s profile and licenses to client-side SDK for processing or verifying.
+  4. The launched content may interact with the user through the user’s profile in VIVEPORT, or just check whether the user owns the content.
 
 * VIVEPORT ID and VIVEPORT Key
 
-The VIVEPORT SDK uses VIVEPORT ID and VIVEPORT Key to communicate with the VIVEPORT platform.VIVEPORT ID and VIVEPORT Key is on the VIVEPORT Listing page.
+  The VIVEPORT SDK uses VIVEPORT ID and VIVEPORT Key to communicate with the VIVEPORT platform.VIVEPORT ID and VIVEPORT Key is on the VIVEPORT Listing page.
 
- 1. Before content can be published to VIVEPORT, the content must have a unique VIVEPORT ID and VIVEPORT Key.
- 2. The VIVEPORT ID and VIVEPORT Key can be requested from the VIVEPORT developer portal at [here](https://developer.viveport.com/console).
- 3. The VIVEPORT ID and VIVEPORT Key must be included in the authentication script before attempting to publish the content on VIVEPORT.
+  1. Before content can be published to VIVEPORT, the content must have a unique VIVEPORT ID and VIVEPORT Key.
+  2. The VIVEPORT ID and VIVEPORT Key can be requested from the VIVEPORT developer portal at [here](https://developer.viveport.com/console).
+  3. The VIVEPORT ID and VIVEPORT Key must be included in the authentication script before attempting to publish the content on VIVEPORT.
 
 * System Requirements
- *Software Requirements
-  1. Unity 5.x for Windows (32/64-bit)
-  2. Unreal Engine 4.x for Windows (64-bit, Visual Studio 2013)
-  3. VIVEPORT Desktop - You can download whole Vive Software since it includes VIVEPORT Desktop.
-  4. VIVEPORT M - You can download whole Vive App from your Android.
- * Runtime Environment
-  1. For Windows, standalone applications for Windows 7/8/10 (32/64-bit) are supported.
-  2. For Android, standalone app from Android version 4.1 with Gyroscope (minimum) to Android version 6 or later with 4G RAM and 1440p resolution (high standard) are supported.
+
+  * Software Requirements
+   1. Unity 5.x for Windows (32/64-bit)
+   2. Unreal Engine 4.x for Windows (64-bit, Visual Studio 2013)
+   3. VIVEPORT Desktop - You can download whole Vive Software since it includes VIVEPORT Desktop.
+   4. VIVEPORT M - You can download whole Vive App from your Android.
+
+  * Runtime Environment
+   1. For Windows, standalone applications for Windows 7/8/10 (32/64-bit) are supported.
+   2. For Android, standalone app from Android version 4.1 with Gyroscope (minimum) to Android version 6 or later with 4G RAM and 1440p resolution (high standard) are supported.
 
 * SDK Usage Outline
 
-Before publishing your content to VIVEPORT, you can (and should) check if the DRM license generated from VIVEPORT cloud services is valid, and then test whether other SDK functions work. The steps below outline the process of integrating the VIVEPORT SDK.
+  Before publishing your content to VIVEPORT, you can (and should) check if the DRM license generated from VIVEPORT cloud services is valid, and then test whether other SDK functions work. The steps below outline the process of integrating the VIVEPORT SDK.
 
-For Unity user:
+  For Unity user:
 
- 1. Create or import your content into Unity
- 2. Download and install the VIVEPORT SDK
- 3. Integrate the VIVEPORT SDK into your content in Unity
+   1. Create or import your content into Unity
+   2. Download and install the VIVEPORT SDK
+   3. Integrate the VIVEPORT SDK into your content in Unity
 
-For Unreal user:
+  For Unreal user:
 
- 1. Create or import your content into Unreal
- 2. Download and install the VIVEPORT SDK
- 3. Integrate the VIVEPORT SDK into your content in Unreal
+   1. Create or import your content into Unreal
+   2. Download and install the VIVEPORT SDK
+   3. Integrate the VIVEPORT SDK into your content in Unreal
 
-For C# user:
+  For C# user:
 
- 1. Create an empty C# project in your visual studio 2015
- 2. Copy settings into your project
- 3. Reload your project and rebuild
+   1. Create an empty C# project in your visual studio 2015
+   2. Copy settings into your project
+   3. Reload your project and rebuild
 
 * API
 
-It has 9 different type of APIs. They are [Top Level API](https://developer.viveport.com/documents/sdk/en/api_top.html), [DRM API](https://developer.viveport.com/documents/sdk/en/api_drm.html), [Session Token API](https://developer.viveport.com/documents/sdk/en/api_token.html), [User Profile API](https://developer.viveport.com/documents/sdk/en/api_userprofile.html), [In-App Purchase (IAP) API](https://developer.viveport.com/documents/sdk/en/api_iap.html), [Deeplink API](https://developer.viveport.com/documents/sdk/en/api_deeplink.html), [Downloadable Content (DLC) API](https://developer.viveport.com/documents/sdk/en/api_dlc.html), [Stats & Achievements API](https://developer.viveport.com/documents/sdk/en/api_stats.html) and [Leaderboards API](https://developer.viveport.com/documents/sdk/en/api_leaderboard.html). The details of how to use them and the examples can be found by click the name.
+ It has 9 different type of APIs. They are [Top Level API](https://developer.viveport.com/documents/sdk/en/api_top.html), [DRM API](https://developer.viveport.com/documents/sdk/en/api_drm.html), [Session Token API](https://developer.viveport.com/documents/sdk/en/api_token.html), [User Profile API](https://developer.viveport.com/documents/sdk/en/api_userprofile.html), [In-App Purchase (IAP) API](https://developer.viveport.com/documents/sdk/en/api_iap.html), [Deeplink API](https://developer.viveport.com/documents/sdk/en/api_deeplink.html), [Downloadable Content (DLC) API](https://developer.viveport.com/documents/sdk/en/api_dlc.html), [Stats & Achievements API](https://developer.viveport.com/documents/sdk/en/api_stats.html) and [Leaderboards API](https://developer.viveport.com/documents/sdk/en/api_leaderboard.html). The details of how to use them and the examples can be found by click the name.
 
 * Integration 
-Here is the guideline of how to integrate your content with the VIVEPORT platform.
- 1. Integration with [Unity](https://developer.viveport.com/documents/sdk/en/unity.html).
- 2. Integration with [Unreal Engine](https://developer.viveport.com/documents/sdk/en/unrealengine.html).
- 3. Integration with [C#](https://developer.viveport.com/documents/sdk/en/csharp.html).
- 4. Integration with [C++](https://developer.viveport.com/documents/sdk/en/cplus.html).
+ Here is the guideline of how to integrate your content with the VIVEPORT platform.
+  1. Integration with [Unity](https://developer.viveport.com/documents/sdk/en/unity.html).
+  2. Integration with [Unreal Engine](https://developer.viveport.com/documents/sdk/en/unrealengine.html).
+  3. Integration with [C#](https://developer.viveport.com/documents/sdk/en/csharp.html).
+  4. Integration with [C++](https://developer.viveport.com/documents/sdk/en/cplus.html).
 
 #### VIVEPORT ARCADE SDK
+
 * ViveportSwitch tool
 
-For developers who want to develop for the Arcade program, you can use this tool to simulate Arcade mode in your computer, and integrate VIVEPORT SDK in the Arcade mode.
+ For developers who want to develop for the Arcade program, you can use this tool to simulate Arcade mode in your computer, and integrate VIVEPORT SDK in the Arcade mode.
 
- 1. When you upload your title, opt-in to the VIVEPORT Arcade Program by checking one of the options in the VIVEPORT Arcade Program section.
+  1. When you upload your title, opt-in to the VIVEPORT Arcade Program by checking one of the options in the VIVEPORT Arcade Program section.
 
- 2. Download and install the VIVEPORT SDK from the [Download page](https://developer.viveport.com/documents/sdk/en/download.html#down-latest-viveport-sdk).
+  2. Download and install the VIVEPORT SDK from the [Download page](https://developer.viveport.com/documents/sdk/en/download.html#down-latest-viveport-sdk).
 
- 3. Unzip the package and find the ViveportSwitch.exe tool.
+  3. Unzip the package and find the ViveportSwitch.exe tool.
 
- 4.Open the ViveportSwitch.exe tool and select VIVEPORT Arcade, then click the Switch button.
+  4.Open the ViveportSwitch.exe tool and select VIVEPORT Arcade, then click the Switch button.
 
    The modes for the tool you can switch to:
 
@@ -310,121 +316,121 @@ For developers who want to develop for the Arcade program, you can use this tool
 
    ◦ VIVEPORT Arcade: Arcade mode SDK interface
 
- 5. After switching to VIVEPORT mode, the VIVEPORT service will be restarted. You must re-launch VIVEPORT on your desktop before continuing development.
+  5. After switching to VIVEPORT mode, the VIVEPORT service will be restarted. You must re-launch VIVEPORT on your desktop before continuing development.
 
-The details of its API and integration, you can found [here](https://developer.viveport.com/documents/sdk/en/viveportarcadesdk.html).
+ The details of its API and integration, you can found [here](https://developer.viveport.com/documents/sdk/en/viveportarcadesdk.html).
 
 #### VIVEPORT Scene SDK  
 
-Help you create immersive VR Previews that will be showcased in VIVEPORT.
+ Help you create immersive VR Previews that will be showcased in VIVEPORT.
 
-Required files:
+ Required files:
 
- You will need to go to [https://developer.vive.com/](https://developer.vive.com/) to register or sign in if you have an existing account.
+  You will need to go to [https://developer.vive.com/](https://developer.vive.com/) to register or sign in if you have an existing account.
 
- Download the vr preview scene sdk [here](https://developer.viveport.com/documents/sdk/en/download_scenesdk.html)
+  Download the vr preview scene sdk [here](https://developer.viveport.com/documents/sdk/en/download_scenesdk.html)
 
-Required Hardware:
+ Required Hardware:
 
- A Vive and Vive controllers setup and working.
+  A Vive and Vive controllers setup and working.
 
-The detailed tutorial can be found [here](https://developer.viveport.com/documents/sdk/en/scenesdk_tutorial.html).
+ The detailed tutorial can be found [here](https://developer.viveport.com/documents/sdk/en/scenesdk_tutorial.html).
 
 #### VIVE HAND TRACKING SDK
 
-* Introduction
+ * Introduction
 
- Vive Hand Tracking SDK is aimed to provide:
+  Vive Hand Tracking SDK is aimed to provide:
 
-  * First-person view hand recognition in VR/AR/Phones
-  * Provide accurate, low-latency, deep learning-based solution.
-  * Support different hardware & operation systems.
-  * Use existing camera modules, no extra hardware needed.
-  * Recognises static gestures, instead of gesture sequences.
-  
-* Supported Operation Systems & Hardware
+   * First-person view hand recognition in VR/AR/Phones
+   * Provide accurate, low-latency, deep learning-based solution.
+   * Support different hardware & operation systems.
+   * Use existing camera modules, no extra hardware needed.
+   * Recognises static gestures, instead of gesture sequences.
 
- Vive Hand Tracking SDK tries our best to support all VR/AR devices with camera on-board. A list of currently supported devices is listed below:
+ * Supported Operation Systems & Hardware
 
-| Operation Sytem  | Aarchitecture | Hardware |
-| --- | --- | --- |
-| Windows 7 or newer  | x86-64 | HTC Vive, HTC Vive Pro |
-|  Android N or newer |  ARMv7, ARMv8 | Android Phone with optional VR headset|
-| Android (WaveVR) | ARMv7	| HTC Vive Focus, HTC Vive Focus Plus |
+  Vive Hand Tracking SDK tries our best to support all VR/AR devices with camera on-board. A list of currently supported devices is listed below:
 
-For detailed requirements for each OS/hardware, please see [Supported Hardware](https://developer.viveport.com/documents/sdk/en/overview/hardware.html).
+ | Operation Sytem  | Aarchitecture | Hardware |
+ | --- | --- | --- |
+ | Windows 7 or newer  | x86-64 | HTC Vive, HTC Vive Pro |
+ |  Android N or newer |  ARMv7, ARMv8 | Android Phone with optional VR headset|
+ | Android (WaveVR) | ARMv7	| HTC Vive Focus, HTC Vive Focus Plus |
 
-* Supported Features
+ For detailed requirements for each OS/hardware, please see [Supported Hardware](https://developer.viveport.com/documents/sdk/en/overview/hardware.html).
 
-Vive Hand Tracking SDK supports:
+ * Supported Features
 
-  * Left/Right hand detection
-  * Pre-defined gesture classification
-  * Different modes for hand position result (restricted by OS/hardware capability)
-For detailed feature for each OS/hardware, please see [Available Features](https://developer.viveport.com/documents/sdk/en/overview/feature.html).
+ Vive Hand Tracking SDK supports:
 
-* Available Plugins
+   * Left/Right hand detection
+   * Pre-defined gesture classification
+   * Different modes for hand position result (restricted by OS/hardware capability)
+ For detailed feature for each OS/hardware, please see [Available Features](https://developer.viveport.com/documents/sdk/en/overview/feature.html).
 
-| Plugin Type | Supported Platforms |	Requirements |
-| ---- | --- | --- |
-| [Unity](https://developer.viveport.com/documents/sdk/en/unity/index.html) |	All	| Unity 5.4 or newer (Android armv8 requires 2017.4+) |
-| [Unreal](https://developer.viveport.com/documents/sdk/en/unreal/index.html) |	All |	Unreal 4.20 or newer |
-| [Android Library](https://developer.viveport.com/documents/sdk/en/android/index.html) |	Android, WaveVR |	Java 8 or newer |
-| [C/C++](https://developer.viveport.com/documents/sdk/en/capi/index.html) |	All |	c/c++ compiler (MSVC or Android NDK) |
+ * Available Plugins
 
-The details guide you can find [here](https://developer.viveport.com/documents/sdk/en/vivehandtracking_index.html).
+ | Plugin Type | Supported Platforms |	Requirements |
+ | ---- | --- | --- |
+ | [Unity](https://developer.viveport.com/documents/sdk/en/unity/index.html) |	All	| Unity 5.4 or newer (Android armv8 requires 2017.4+) |
+ | [Unreal](https://developer.viveport.com/documents/sdk/en/unreal/index.html) |	All |	Unreal 4.20 or newer |
+ | [Android Library](https://developer.viveport.com/documents/sdk/en/android/index.html) |	Android, WaveVR |	Java 8 or newer |
+ | [C/C++](https://developer.viveport.com/documents/sdk/en/capi/index.html) |	All |	c/c++ compiler (MSVC or Android NDK) |
+
+ The details guide you can find [here](https://developer.viveport.com/documents/sdk/en/vivehandtracking_index.html).
 
 #### VIVEPORT AirSig SDK
 
-This document will help you to integrate your content with the VIVEPORT AirSig gesture and signature recognition.
+ This document will help you to integrate your content with the VIVEPORT AirSig gesture and signature recognition.
 
-* Usage Cases
-VIVEPORT AirSig Manager provides 4 major functions:
+ * Usage Cases
+ VIVEPORT AirSig Manager provides 4 major functions:
 
- * Player’s Signatures:
+  * Player’s Signatures:
 
- Identify player’s identity by verifying against Player’s Signatures with adjustable signature strength.
+  Identify player’s identity by verifying against Player’s Signatures with adjustable signature strength.
 
- * Developer-defined Gestures:
+  * Developer-defined Gestures:
 
- Identify input gestures against Developer-defined Gestures. The feature is:
+  Identify input gestures against Developer-defined Gestures. The feature is:
 
-   * Developers customize and define gestures. Players don’t have to train.
-   * With high generality. Even different players with different drawing habit(e.g. different size, shape), system can recongnize it.
-   * In order to use this feature, gestures sample must be collected first and then generate a gesture profile in AirSig Developer Portal , or developers can use the gesture profile generated by others.
+    * Developers customize and define gestures. Players don’t have to train.
+    * With high generality. Even different players with different drawing habit(e.g. different size, shape), system can recongnize it.
+    * In order to use this feature, gestures sample must be collected first and then generate a gesture profile in AirSig Developer Portal , or developers can use the gesture profile generated by others.
 
- * Player-defined Gestures:
+  * Player-defined Gestures:
 
- Learn and identify Player-defined Gestures. The feature is:
+  Learn and identify Player-defined Gestures. The feature is:
 
-  * Players can create their own gestures in application real-time.
-  * The training progress is needed. Players have to repeat the same gesture for about 5 times.
-  * This kind of gesture focus on the drawing feature of individual. Less likely to be shareable between players.
+   * Players can create their own gestures in application real-time.
+   * The training progress is needed. Players have to repeat the same gesture for about 5 times.
+   * This kind of gesture focus on the drawing feature of individual. Less likely to be shareable between players.
 
- * Smart Gesture:
+  * Smart Gesture:
 
- Smart Gesture algorithm that combines the result of Developer-defined Gestures and Player-defined Gestures (2 and 3). The feature is:
+  Smart Gesture algorithm that combines the result of Developer-defined Gestures and Player-defined Gestures (2 and 3). The feature is:
 
-  * Developers define the gesture and design a “Tutorial phase” in application. Players have to repeat the gesture and system learns the drawing habit in the same time. The accuracy is further improved.
-  * In “Tutorial phase”, if the players’ drawing habit is very different from the gestures defined by developers, system will not learn it. That can avoid the wrong gesture affects the recognition result.
-  * We suggest developers use this mode in most scenario. Players usually don’t familiar with using gestures. The “Tutorial phase” helps players practice it and system can learn the drawing habit in the same time.
+   * Developers define the gesture and design a “Tutorial phase” in application. Players have to repeat the gesture and system learns the drawing habit in the same time. The accuracy is further improved.
+   * In “Tutorial phase”, if the players’ drawing habit is very different from the gestures defined by developers, system will not learn it. That can avoid the wrong gesture affects the recognition result.
+   * We suggest developers use this mode in most scenario. Players usually don’t familiar with using gestures. The “Tutorial phase” helps players practice it and system can learn the drawing habit in the same time.
 
-* System Requirements
+ * System Requirements
 
-  * Software Requirements
-  
-   * .Net Framework 4.6.1 - for Windows.
-   * Microsoft Visual C++ 2017 Redistributable (x64) for Windows (64-bit)
-   * Unity v5.6 or above version.
-   * HTC Wave SDK for Android.
-   
+   * Software Requirements
+
+    * .Net Framework 4.6.1 - for Windows.
+    * Microsoft Visual C++ 2017 Redistributable (x64) for Windows (64-bit)
+    * Unity v5.6 or above version.
+    * HTC Wave SDK for Android.
+
   * Runtime Environment
-  
-   * For Windows, standalone applications for Windows 7/8/10 (32/64-bit) are supported.
-   * For Android, standalone app from Android version 4.1 with Gyroscope (minimum) to Android version 6 or later with 4G RAM and 1440p resolution (high standard) are supported.
-   
-* Installation
-VIVEPORT AirSig supports Vive and Wave. Please refer to [AirSig](http://www.airsig.com/vr/) for installation.
 
-* API and Integration
-It has two APIs which are [Method](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_method.html) and [Event Delegates](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_eventdelegates.html). The way of integration with Unity can be found [here](https://developer.viveport.com/documents/sdk/en/viveport_airsig_unity.html).
+    * For Windows, standalone applications for Windows 7/8/10 (32/64-bit) are supported.
+    * For Android, standalone app from Android version 4.1 with Gyroscope (minimum) to Android version 6 or later with 4G RAM and 1440p resolution (high standard) are supported.
+
+ * Installation
+ VIVEPORT AirSig supports Vive and Wave. Please refer to [AirSig](http://www.airsig.com/vr/) for installation.
+
+ * API and Integration
+ It has two APIs which are [Method](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_method.html) and [Event Delegates](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_eventdelegates.html). The way of integration with Unity can be found [here](https://developer.viveport.com/documents/sdk/en/viveport_airsig_unity.html).
