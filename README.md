@@ -12,14 +12,27 @@ Vive Port is a VR device that can be connect to the pc and acts like a controlle
   * [Assembly](#assembly)
   * [Charging The Batteries](#charging-the-batteries)
   * [Powering Up](#powering-up)
-* [Device's Functionalities and Features](#devices-functionalities-and-features)
-* [Safety Guidelines](#safety-guidelines)
-  * [Environmental Consideration](#environmental-consideration)
-  * [Operation](#operation)
-  * [Pre-Flight Checklist](pre-flight-checklist)
 * [SDK](#sdk)
-* [Accessories](#accessories)
-  * [DJI Goggles](DJIGoggles)
+  * [Become A Developer](#becaome-a-developer)
+  * [Getting Application Key](#getting-application-key)
+  * [VIVE Wave SDK](#vive-wave-sdk)
+    * [The key feature of VIVE Wave SDK](#the-key-feature-of-vive-wave-sdk)
+    * [Wave Native SDK](#wave-native-sdk)
+    * [Wave Unity SDK](#wave-unity-sdk)
+    * [Wave Unreal SDK](#wave-unreal-sdk)
+    * [Wave PluginKit SDK](#wave-pluginkit-sdk)
+    * [Wave OEM SDK](#wave-oem-sdk)
+  * [VIVE Sense SDK](#vive-sense-sdk)
+    * [SRanipal SDK](#sranipal-sdk)
+    * [VIVE Hand Tracking SDK](#vive-hand-tracking-sdk)
+    * [SRWorks SDK](#srworks-sdk)
+    * [VIVE 3DSP SDK](#vive-3dsp-sdk)
+  * [VIVEPORT SDK](#viveport-sdk)
+    * [VIVEPORT SDK](#viveport-sdk)
+    * [VIVEPORT ARCADE SDK](#viveport-arcade-sdk)
+    * [VIVEPORT Scene SDK](#viveport-scene-sdk)
+    * [VIVE HAND TRACKING SDK](#vive-hand-tracking-sdk)
+    * [VIVEPORT AirSig SDK](#viveport-airsig-sdk)
 * [Putting The Device Back](#putting-the-device-back)
 * [More Documentations](more-documentations)
 
@@ -432,3 +445,13 @@ The VIVEPORT SDK consists of the components below:
  * API and Integration
  
  It has two APIs which are [Method](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_method.html) and [Event Delegates](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_eventdelegates.html). The way of integration with Unity can be found [here](https://developer.viveport.com/documents/sdk/en/viveport_airsig_unity.html).
+ 
+ 
+##  Putting The Device Back
+
+After finish using the device, it is important to turn off, disassemble and put it back in the box as it was found, then put the box back in its place.
+
+## More Documentations
+
+More documentations and materials to download could be found [here](https://developer.vive.com/us/viveport/).
+
