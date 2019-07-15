@@ -44,7 +44,7 @@ Lab - shelf lef1
 The box contains all the equipments which related to Vive Port VR. It has the box based on the steps. Step 1 is one big paper which introduces how to download and set up. Step 2-5 all is linked to different boxes. Below is the content list of the Vive-pro box.
 1. Headset with headset cable
 2. Controller (with lanyard) x2
-3. Power adaper x2
+3. Power adapter x2
 4. Micro-USB cable x2
 5. Earphone hole cap x2
 6. Link box mounting pad
@@ -119,7 +119,7 @@ Key Features of VIVE Wave™
 
    VIVE Wave™ provides easy-use and practical SDK APIs for VR contents development. Developers just need to spend minimal effort to be able to easily port contents to VIVE Wave™.
 
-5. Versatile VR Features Optimized for Mobile VR 
+5. Versatile VR Features Optimized for Mobile VR
 
    * <20ms motion to photon latency
    * 3/6 DoF head and controller tracking
@@ -131,13 +131,13 @@ Key Features of VIVE Wave™
    * System 2D Overlay
    * Unity and Unreal Plugin support
    * Safety virtual wall
-  
+
 6. Various HMD Types Supported
 
    * Smartphone slot-in HMD
    * Smartphone tethered HMD
    * Standalone HMD
-  
+
 7. Open Interface for Device Plugin
 
    The vendors of VR accessory can easily develop their device service(driver) and plug in into VIVE Wave™ via apk installation. Per this way, VIVE Wave™ device can widely be expanded to fulfill the various demands of end users, such as: 3/6 DoF controller, Eye tracking, Hand tracking, and etc.
@@ -162,7 +162,7 @@ Key Features of VIVE Wave™
 #### Wave PluginKit SDK
 
    The PluginKit SDK is provided to help developers design a VR DeviceService. It encapsulates the communication between a VIVE Wave™ Server and a VR DeviceService. It also provides mechanisms for defining data transmission.
-   
+
    * The PluginKit has defined several interfaces to make it easier to develop drivers.
    * A VR DeviceService can currently send three types of data (pose, button, and analog) to VR apps.
    * When developing a VR DeviceService, you should define what role your device will play and what data type your device will send.
@@ -172,7 +172,7 @@ Key Features of VIVE Wave™
 #### Wave OEM SDK
 
    The VROEMservice SDK is provided to help developers design a VROEMService. It encapsulates the communication between a VIVE Wave™ Server and a VROEMService. It also provides mechanisms for defining data transmission and making VIVE Wave™ Server to act.
-   
+
    * The VROEMservice defines several interfaces to make it easier to customize your own features.
    * A VROEMService can get information from VIVE Wave™ Server.
    * When developing a VROEMservice, you should implement the interface of IVROEMService and the interface of IVROEMService_api1.
@@ -214,14 +214,14 @@ This SDK is used to build applications for pc, it consists of multiple sub SDK t
   VIVE 3DSP SDK can be download from [here](https://developer.vive.com/resources/knowledgebase/vive-3dsp-sdk-2/)
 
   Detailed documentations and code samples can be found [here](https://developer.vive.com/resources/knowledgebase/about-vive-pro-sdks)
-  
+
 
 ### VIVEPORT SDK
 
    Viveport is the official VR App Store, available in 60+ markets. VIVEPORT is compatible with a range of devices from HTC, other SteamVR devices, as well as devices from partner companies based on the WAVE runtime for all-in-one VR headsets.
-   
+
    Download the VIVEPORT SDK from [here](https://developer.vive.com/resources/knowledgebase/viveport-sdk-download-2/).
-   
+
    Dowenload the VIVEPORT Scene SDK from [here](https://developer.vive.com/resources/knowledgebase/download-viveport-scene-sdk/).
 
 #### VIVEPORT SDK
@@ -246,7 +246,7 @@ The VIVEPORT SDK consists of the components below:
  2. VIVEPORT Desktop (For Windows) / VIVEPORT M (For Android)
  3. VIVEPORT cloud services
  4. ViVEPORT Switch Tool (For Windows Arcade development)
-  
+
 ##### Introduction
 
 * How Does the Client-Side SDK Work
@@ -302,7 +302,7 @@ The VIVEPORT SDK consists of the components below:
 
  It has 9 different type of APIs. They are [Top Level API](https://developer.viveport.com/documents/sdk/en/api_top.html), [DRM API](https://developer.viveport.com/documents/sdk/en/api_drm.html), [Session Token API](https://developer.viveport.com/documents/sdk/en/api_token.html), [User Profile API](https://developer.viveport.com/documents/sdk/en/api_userprofile.html), [In-App Purchase (IAP) API](https://developer.viveport.com/documents/sdk/en/api_iap.html), [Deeplink API](https://developer.viveport.com/documents/sdk/en/api_deeplink.html), [Downloadable Content (DLC) API](https://developer.viveport.com/documents/sdk/en/api_dlc.html), [Stats & Achievements API](https://developer.viveport.com/documents/sdk/en/api_stats.html) and [Leaderboards API](https://developer.viveport.com/documents/sdk/en/api_leaderboard.html). The details of how to use them and the examples can be found by click the name.
 
-* Integration 
+* Integration
 
  Here is the guideline of how to integrate your content with the VIVEPORT platform.
   1. Integration with [Unity](https://developer.viveport.com/documents/sdk/en/unity.html).
@@ -393,7 +393,7 @@ The VIVEPORT SDK consists of the components below:
  This document will help you to integrate your content with the VIVEPORT AirSig gesture and signature recognition.
 
  * Usage Cases
- 
+
    VIVEPORT AirSig Manager provides 4 major functions:
 
    * Player’s Signatures:
@@ -401,7 +401,7 @@ The VIVEPORT SDK consists of the components below:
      Identify player’s identity by verifying against Player’s Signatures with adjustable signature strength.
 
    * Developer-defined Gestures:
-   
+
      Identify input gestures against Developer-defined Gestures. The feature is:
 
     1. Developers customize and define gestures. Players don’t have to train.
@@ -409,7 +409,7 @@ The VIVEPORT SDK consists of the components below:
     3. In order to use this feature, gestures sample must be collected first and then generate a gesture profile in AirSig Developer Portal , or developers can use the gesture profile generated by others.
 
    * Player-defined Gestures:
-   
+
      Learn and identify Player-defined Gestures. The feature is:
 
     1. Players can create their own gestures in application real-time.
@@ -417,9 +417,9 @@ The VIVEPORT SDK consists of the components below:
     3. This kind of gesture focus on the drawing feature of individual. Less likely to be shareable between players.
 
    * Smart Gesture:
-   
+
      Smart Gesture algorithm that combines the result of Developer-defined Gestures and Player-defined Gestures (2 and 3). The feature is:
-    
+
     1. Developers define the gesture and design a “Tutorial phase” in application. Players have to repeat the gesture and system learns the drawing habit in the same time. The accuracy is further improved.
     2. In “Tutorial phase”, if the players’ drawing habit is very different from the gestures defined by developers, system will not learn it. That can avoid the wrong gesture affects the recognition result.
     3. We suggest developers use this mode in most scenario. Players usually don’t familiar with using gestures. The “Tutorial phase” helps players practice it and system can learn the drawing habit in the same time.
@@ -443,10 +443,10 @@ The VIVEPORT SDK consists of the components below:
  VIVEPORT AirSig supports Vive and Wave. Please refer to [AirSig](http://www.airsig.com/vr/) for installation.
 
  * API and Integration
- 
+
  It has two APIs which are [Method](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_method.html) and [Event Delegates](https://developer.viveport.com/documents/sdk/en/viveport_airsig_api_eventdelegates.html). The way of integration with Unity can be found [here](https://developer.viveport.com/documents/sdk/en/viveport_airsig_unity.html).
- 
- 
+
+
 ##  Putting The Device Back
 
 After finish using the device, it is important to turn off, disassemble and put it back in the box as it was found, then put the box back in its place.
@@ -454,4 +454,3 @@ After finish using the device, it is important to turn off, disassemble and put 
 ## More Documentations
 
 More documentations and materials to download could be found [here](https://developer.vive.com/us/viveport/).
-
